@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<HEAD>
+	<link  rel="stylesheet"  href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"/>
+	<title>Address Form</title>
+
+	<style>
+		.submit{
+			font-weight: bolder;
+			font-size:2em;
+			border-radius: 25px;
+			background-color: black;
+			color:white;
+		}
+		input[type="text"],input[type="number"],input[type="radio"]{
+			font-family: courier;
+			font-size:1.5em;
+			border: dashed, black;
+			margin: 5pt 10pt 5pt 10pt;
+		}
+	</style>
+</HEAD>
+	<body>
+	<h1>Enter your personal address here</h1>
+    <!--Start form here--->
+    <form action="#" method="post">
+    	<label for="name">Name: </label>
+    	<input type="text" name="name" id="name"/> <br>
+
+    	<label for ="streetNo">Street number: </label>
+    	<input type ="number" id="streetNo" name="StreetName" min="1"/>
+
+    	<label for ="StreetName">Street name: </label>
+    	<input type ="text" id ="StreetName" name="StreetName"/>
+
+    	<label for="apartmentNo">Apartment number: </label>
+    	<input type ="text" id="apartmentNo" name ="apartmentNo"/><br/>
+
+         <label for="postCode">Postal Code:</label>
+        <input type="text" id="postCode" name ="postCode"/><br/>
+
+    	<label for  ="city">City name:</label>
+    	<input type ="text" id="city" name ="city"/><br/>
+
+        <label for  ="country">Country name:</label>
+        <input type ="text" id="country" name ="country"/><br/>
+
+
+    	<label for="continent">Your continent: </label><br/>
+ 		<input type="radio" id="nAmerica" name="continent" value="North America"/> North America<br/>
+        <input type="radio" id="sAmerica" name="continent" value="South America"/> South America <br/>
+        <input type="radio" id= "eu" name="continent" value="Europe"/> Europe <br/>
+        <input type="radio" id="asia" name ="continent" value="Asia"/> Asia <br/>
+        <input type="radio" id="au" name="continent" value="Australia"/> Australia <br/>
+        <input type="radio" id="africa" name ="continent" value="Africa"/> Africa <br/>
+        <input type="radio" id="other" name="continent" value="other"/>Other <br/>
+
+        <button class="submit" type="submit">Submit</button>
+        <button class="submit" type="reset">Reset</button>
+      </form>
+	</body>
+</html>
