@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html>
+<HEAD>
+	<link  rel="stylesheet"  href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css"/> 
+	<title>My Long Form</title>
+    <style>
+        	input[type="text"],input[type="email"],input[type="url"],input[type="tel"],input[type="number"],input[type="date"],input[type="checkbox"],input[type="radio"],textarea{
+	        	font-family:'Open Sans';
+	        	width:200px;
+	        	height:25px;
+	        	line-height:25px;
+                color:#333;
+                 background-color:#fff;
+                border:1px solid #236;
+                border-radius:3px;
+                padding:3px;
+                margin: 20px 0px 20px 0px;
+
+         }
+
+				textarea{
+				 width:200px;
+				 height:75px;
+				 resize:none;
+				}
+        
+    </style>
+</HEAD>
+<body>
+	<h1>Enter your personal details here</h1>
+    <form action="#" method="post">
+        <label for="password">Enter password:</label>
+        <input type="password" size="25" maxlength="25"/><br/>
+
+    	<label for="name">Name: </label>
+    	<input type="text" name="name" id="name"/> <br>
+ 
+ 		<label for="age">Age:</label>
+ 		<input type="number" id="age" name="age" min="0" max="125"/><br/>
+
+		<label for="birthday">Birthday:</label>
+ 		<input type="date" id="birthday" name="birthday"/><br/>
+ 		
+
+ 		<label for="contact">Method of Contact:</label><br/>
+ 		<input type="checkbox" id="electrinc" name="contact" value="email"/>Email<br/>
+ 		<input type="checkbox" id="postal" name="contact" value="postal"/>Post office <br/>
+ 		<input type="checkbox" id="telephone" name="contact" value="telephone"/> Telephone <br/>
+
+ 		<label for="continent">Your continent: </label><br/>
+ 		<input type="radio" id="nAmerica" name="continent" value="North America"/> North America<br/>
+        <input type="radio" id="sAmerica" name="continent" value="South America"/> South America <br/>
+        <input type="radio" id= "eu" name="continent" value="Europe"/> Europe <br/>
+        <input type="radio" id="asia" name ="continent" value="Asia"/> Asia <br/>
+        <input type="radio" id="au" name="continent" value="Australia"/> Australia <br/>
+        <input type="radio" id="africa" name ="continent" value="Africa"/> Africa <br/>
+        <input type="radio" id="other" name="continent" value="other"/>Other <br/>
+
+    	<label for ="email"> Email: </label>
+    	<input type="email" id="email" name ="email"/><br>
+        
+        <label for ="phone">Telephone: </label>
+        <input type="tel" id="phone" name ="phone"/><br>
+
+        <label for="website">Website: </label>
+        <input type="url" id="website" name ="website"/><br>
+
+        <label for="msg"> Message: </label>
+        <input type="text" id="msg" name="msg"/>
+
+    </form>
+</body>
+</html>
